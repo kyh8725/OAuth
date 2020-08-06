@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,4BAA4B;AAO5B,iDAAiD",
+    "sources": [
+        "index.scss",
+        "_partials/_breakpoints.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
