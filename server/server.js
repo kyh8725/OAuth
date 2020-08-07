@@ -4,7 +4,7 @@ const express = require("express");
 const session = require("express-session");
 
 // cors package prevents CORS errors when using client side API calls
-const cors = requiire("cors");
+const cors = require("cors");
 
 // add http headers, small layer of security
 const helmet = require("helmet");
