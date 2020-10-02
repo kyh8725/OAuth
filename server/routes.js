@@ -21,7 +21,7 @@ router.get("/login", (req, res) => {
 // logout path
 router.get("/logout", (req, res) => {
   req.logout();
-  res.resdirect(req.query.from);
+  res.redirect(req.query.from);
 });
 
 //GitHub Auth CallBack/Redirect http:://localhost:5000/auth

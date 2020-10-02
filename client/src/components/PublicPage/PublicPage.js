@@ -1,10 +1,10 @@
 import React from "react";
 
-export default (PublicPage) => {
+export default function PublicPage() {
   return (
     <>
       <div>Public page</div>
       <p>dasfasdfsadf</p>
     </>
   );
-};
+}

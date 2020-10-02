@@ -5,7 +5,7 @@ export default (props) => {
   return (
     <>
       <div>Protected Page</div>
-      <h1>{props.user.displayName}</h1>
+      <h1>{props.user.username}</h1>
     </>
   );
 };
