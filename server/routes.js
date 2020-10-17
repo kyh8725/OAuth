@@ -18,6 +18,14 @@ router.get("/login", (req, res) => {
   passport.authenticate("github")(req, res);
 });
 
+//auth with google
+router.get('/google',(req,res)=>{
+  authRedirect = req.query.from;
+  passport.authenticate("google",{scope:['profile']})(req,res);
+})
+
+
+
 // logout path
 router.get("/logout", (req, res) => {
   req.logout();
@@ -31,6 +39,15 @@ router.get("/auth", (req, res) => {
     failureRedirect: "/loginFailed",
   })(req, res);
 });
+
+//Google Auth CallBack/Redirect http:://localhost:5000/googleauth
+router.get("/googleauth", (req, res) => {
+  passport.authenticate("google", {
+    successRedirect: authRedirect,
+    failureRedirect: "/loginFailed",
+  })(req, res);
+});
+
 
 // endpoint for checking user's auth status
 router.get("/check-auth", (req, res) => {

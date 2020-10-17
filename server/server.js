@@ -16,9 +16,10 @@ const logger = require("morgan");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// instantiate Passport and Github Strategy
+// instantiate Passport and Github + Google Strategy
 const passport = require("passport");
 const GitHubStrategy = require("passport-github").Strategy;
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 //import router paths
 const routes = require("./routes");
@@ -30,6 +31,12 @@ const passportConfig = {
   clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
   callbackURL: process.env.CALLBACK_URL,
+};
+
+const passportGoogleConfig = {
+  clientID: process.env.GOOGLE_CLIENT_ID,
+  clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+  callbackURL: process.env.GOOGLE_CALLBACK_URL,
 };
 
 app.use(express.json());
@@ -71,6 +78,17 @@ passport.use(
   ) {
     // console.log('Github Callback: ', profile);
     // this profile will get saved in express session
+    return cb(null, profile);
+  })
+);
+
+passport.use(
+  new GoogleStrategy(passportGoogleConfig, function (
+    _accessToken,
+    _refreshToken,
+    profile,
+    cb
+  ) {
     return cb(null, profile);
   })
 );

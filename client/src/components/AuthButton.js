@@ -43,7 +43,7 @@ class AuthButton extends Component {
             src={this.state.user.photos[0].value}
             alt={this.state.user.displayName}
           />
-          Welcome, {this.state.user.username}!
+          Welcome, {this.state.user.username || this.state.user.displayName}!
           <button onClick={this.signOut}>Sign out</button>
         </p>
       )

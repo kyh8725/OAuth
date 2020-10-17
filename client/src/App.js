@@ -15,7 +15,7 @@ export default class App extends Component {
     return (
       <Router>
         <div className="app">
-          <AuthButton />
+        <AuthButton />
           <ul>
             <li>
               <Link to="/public">Public Page</Link>
