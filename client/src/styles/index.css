@@ -1,3 +1,27 @@
 /* media query for tablet */
 /* media query for high pixel density desktops */
+body {
+  margin: 0 1rem;
+}
+
+.app {
+  padding: 0 1rem;
+}
+
+button {
+  margin: 0.5rem !important;
+}
+
+img {
+  margin: 1rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    margin: 0 10rem;
+  }
+  .app {
+    padding: 0 10rem;
+  }
+}
 /*# sourceMappingURL=index.css.map */

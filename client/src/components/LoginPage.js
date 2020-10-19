@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { API_URL } from "../App";
+import {Button} from "react-bootstrap";
 
 class Login extends Component {
   login = () => {
@@ -23,8 +24,8 @@ class Login extends Component {
     return (
       <div>
         <p>You must log in to view the page</p>
-        <button onClick={this.login}>Log in with Github</button>
-        <button onClick={this.loginGoogle}>Log in with Google+</button>
+        <Button variant="secondary" onClick={this.login}>Log in with Github</Button>
+        <Button variant="danger" onClick={this.loginGoogle}>Log in with Google+</Button>
 
       </div>
     );

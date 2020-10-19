@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { API_URL } from "../App";
+import {Button} from "react-bootstrap";
 
 class AuthButton extends Component {
   state = {
@@ -39,12 +40,13 @@ class AuthButton extends Component {
       this.state.isAuthenticated && (
         <p>
           <img
+           className="profile-img"
             height="25"
             src={this.state.user.photos[0].value}
             alt={this.state.user.displayName}
           />
           Welcome, {this.state.user.username || this.state.user.displayName}!
-          <button onClick={this.signOut}>Sign out</button>
+        <Button variant="outline-danger" onClick={this.signOut}> Sign out </Button>
         </p>
       )
     );
