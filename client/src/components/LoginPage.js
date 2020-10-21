@@ -23,10 +23,8 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <p>You must log in to view the page</p>
         <Button variant="secondary" onClick={this.login}>Log in with Github</Button>
         <Button variant="danger" onClick={this.loginGoogle}>Log in with Google+</Button>
-
       </div>
     );
   }

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Route, Redirect } from "react-router-dom";
 import axios from "axios";
-
-// We will be exporting the API_URL from App.js in a later step
 import { API_URL } from "../App";
 
 class PrivateRoute extends Component {

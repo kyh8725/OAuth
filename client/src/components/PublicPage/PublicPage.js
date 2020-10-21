@@ -4,7 +4,6 @@ export default function PublicPage() {
   return (
     <>
       <div>Public page</div>
-      <p>dasfasdfsadf</p>
     </>
   );
 }
