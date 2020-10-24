@@ -11,13 +11,216 @@
   margin: auto;
 }
 
+.carousel-item {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.vehicle-make {
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+  -webkit-animation-name: textMotionMake;
+          animation-name: textMotionMake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vehicle-toyota {
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+  -webkit-animation-name: textMotionToyota;
+          animation-name: textMotionToyota;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vehicle-name {
+  position: absolute;
+  -webkit-animation-name: textMotionName;
+          animation-name: textMotionName;
+  top: 10vw;
+  left: 1vw;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vehicle-supra {
+  position: absolute;
+  position: absolute;
+  -webkit-animation-name: textMotionSupra;
+          animation-name: textMotionSupra;
+  top: 7vw;
+  left: 1vw;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes textMotionMake {
+  0% {
+    -webkit-transform: translateX(-1000vw);
+            transform: translateX(-1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(7vw);
+            transform: translateX(7vw);
+    font-size: 6vw;
+  }
+}
+
+@keyframes textMotionMake {
+  0% {
+    -webkit-transform: translateX(-1000vw);
+            transform: translateX(-1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(7vw);
+            transform: translateX(7vw);
+    font-size: 6vw;
+  }
+}
+
+@-webkit-keyframes textMotionName {
+  0% {
+    -webkit-transform: translateX(-1000vw);
+            transform: translateX(-1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(13vw);
+            transform: translateX(13vw);
+    font-size: 5vw;
+  }
+}
+
+@keyframes textMotionName {
+  0% {
+    -webkit-transform: translateX(-1000vw);
+            transform: translateX(-1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(13vw);
+            transform: translateX(13vw);
+    font-size: 5vw;
+  }
+}
+
+@-webkit-keyframes textMotionToyota {
+  0% {
+    -webkit-transform: translateX(1000vw);
+            transform: translateX(1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(60vw);
+            transform: translateX(60vw);
+    font-size: 6vw;
+  }
+}
+
+@keyframes textMotionToyota {
+  0% {
+    -webkit-transform: translateX(1000vw);
+            transform: translateX(1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(60vw);
+            transform: translateX(60vw);
+    font-size: 6vw;
+  }
+}
+
+@-webkit-keyframes textMotionSupra {
+  0% {
+    -webkit-transform: translateX(1000vw);
+            transform: translateX(1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(80vw);
+            transform: translateX(80vw);
+    font-size: 5vw;
+  }
+}
+
+@keyframes textMotionSupra {
+  0% {
+    -webkit-transform: translateX(1000vw);
+            transform: translateX(1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(80vw);
+            transform: translateX(80vw);
+    font-size: 5vw;
+  }
+}
+
 .login {
   width: 100%;
   height: 50vh;
 }
 
+.footer {
+  color: white;
+  background-color: #3e4551;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer .fa {
+  padding: 20px;
+  font-size: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.1rem 0.5rem;
+  border-radius: 50%;
+}
+
+.footer .fa:hover {
+  color: #6b6b6b;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3rem;
+}
+
 body {
   margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 1440px) {

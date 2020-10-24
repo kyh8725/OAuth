@@ -12,12 +12,31 @@ export default function PublicPage() {
   <div className="carousel-inner">
     <div className="carousel-item active">
       <img className="d-block w-100" src="/porsche.jpg" alt="porsche"/>
+
+      <p className="vehicle-make">
+   Porsche
+        </p>
+        <p className="vehicle-name">
+   911
+        </p>
     </div>
     <div className="carousel-item">
       <img className="d-block w-100" src="/ferrari.jpg" alt="ferrari"/>
+      <p className="vehicle-make">
+  Ferrari
+</p>
+      <p className="vehicle-name">
+  458 Italia
+</p>
     </div>
     <div className="carousel-item">
       <img className="d-block w-100" src="/supra.jpg" alt="supra"/>
+      <p className="vehicle-toyota">
+Toyota
+</p>
+<p className="vehicle-supra">
+Supra
+</p>
     </div>
   </div>
   <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

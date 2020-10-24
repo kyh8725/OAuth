@@ -28,13 +28,7 @@ export default function Header() {
         height="30"
         className="d-inline-block align-top"
       /></Link>   
-       <Link to="/protected"> <img
-        alt=""
-        src="/shopping-cart.png"
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
-      /></Link>  
+
           </Nav>      
         </Navbar.Collapse>
       </Navbar>
@@ -42,3 +36,10 @@ export default function Header() {
       </>
       )
 }
+/**       <Link to="/protected"> <img
+        alt=""
+        src="/shopping-cart.png"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+      /></Link>   */

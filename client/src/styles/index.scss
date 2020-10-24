@@ -2,11 +2,14 @@
 @import "./_partials/header";
 @import "./_partials/landing";
 @import "./_partials/login";
+@import "./_partials/footer";
 
 body {
   margin: 0 1rem;
 }
-
+a {
+  text-decoration: none;
+}
 @include desk {
   body {
     margin: 0 10rem;
