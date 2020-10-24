@@ -1,27 +1,28 @@
 /* media query for tablet */
 /* media query for high pixel density desktops */
+.header a,
+.header img {
+  margin: auto 1rem;
+}
+
+.carousel-inner > .carousel-item > img {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.login {
+  width: 100%;
+  height: 50vh;
+}
+
 body {
   margin: 0 1rem;
-}
-
-.app {
-  padding: 0 1rem;
-}
-
-button {
-  margin: 0.5rem !important;
-}
-
-img {
-  margin: 1rem;
 }
 
 @media only screen and (min-width: 1440px) {
   body {
     margin: 0 10rem;
-  }
-  .app {
-    padding: 0 10rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

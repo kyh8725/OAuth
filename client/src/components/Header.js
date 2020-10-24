@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import {Navbar, Nav, Button} from "react-bootstrap";
+import {Navbar, Nav} from "react-bootstrap";
 
 export default function Header() {
     return (
         <>
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-        <Navbar.Brand href="#home">
+        <div className="header">
+        <Navbar className="header" collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar.Brand href="/home">
       <img
         alt=""
         src="/logo.png"
@@ -18,8 +19,8 @@ export default function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Link to="/public"><Button variant="light"><strong>Home </strong></Button></Link>
-            <Link to="/Vehicles"><Button variant="light"><strong>Vehicles </strong></Button></Link>
+          <Nav.Link href="/home"><strong>HOME</strong> </Nav.Link>
+      <Nav.Link href="/vehicles"><strong>VEHICLES</strong></Nav.Link>
         <Link to="/protected"> <img
         alt=""
         src="/login.png"
@@ -29,14 +30,15 @@ export default function Header() {
       /></Link>   
        <Link to="/protected"> <img
         alt=""
-        src="/shopping-cart.svg"
+        src="/shopping-cart.png"
         width="30"
         height="30"
         className="d-inline-block align-top"
-      /></Link>   
+      /></Link>  
           </Nav>      
         </Navbar.Collapse>
       </Navbar>
+      </div>
       </>
       )
 }

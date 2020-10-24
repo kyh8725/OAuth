@@ -1,24 +1,14 @@
 @import "./_partials/breakpoints";
+@import "./_partials/header";
+@import "./_partials/landing";
+@import "./_partials/login";
 
 body {
   margin: 0 1rem;
-}
-.app {
-  padding: 0 1rem;
-}
-button {
-  margin: 0.5rem !important;
-}
-
-img {
-  margin: 1rem;
 }
 
 @include desk {
   body {
     margin: 0 10rem;
-  }
-  .app {
-    padding: 0 10rem;
   }
 }
