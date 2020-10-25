@@ -1,4 +1,33 @@
 .login {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 50vh;
+  padding: 1rem;
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  &__welcome {
+    margin-bottom: 1rem;
+  }
+  &__btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  &__button {
+    width: 6rem;
+    margin: 1rem;
+  }
+}
+
+@include tablet {
+  .login {
+    padding: 1rem 10rem;
+  }
 }

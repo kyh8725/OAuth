@@ -3,12 +3,16 @@
 @import "./_partials/landing";
 @import "./_partials/login";
 @import "./_partials/footer";
+@import "./_partials/models";
 
 body {
   margin: 0 1rem;
 }
 a {
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 @include desk {
   body {

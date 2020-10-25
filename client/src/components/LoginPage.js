@@ -23,8 +23,18 @@ class Login extends Component {
   render() {
     return (
       <div className="login">
-        <Button variant="secondary" onClick={this.login}>Log in with Github</Button>
-        <Button variant="danger" onClick={this.loginGoogle}>Log in with Google+</Button>
+      <div className="login__title">LOGIN</div>
+      <div className="login__welcome"> Welcome to dreamGarage, the portal for sports car shoppers and owners!<br></br>
+      <br></br> You can log in with Github or Google+ id.
+      
+      </div>
+
+
+        <div className="login__btn-wrap">
+        <Button variant="secondary" className='login__button' onClick={this.login}>Github</Button>
+        <Button variant="danger" className='login__button' onClick={this.loginGoogle}>Google+</Button> 
+        </div>
+
       </div>
     );
   }

@@ -12,66 +12,65 @@
 }
 
 .carousel-item {
+  width: 100%;
   position: relative;
   text-align: center;
   color: white;
 }
 
+.porsche-hover {
+  color: white;
+}
+
+.porsche-hover:hover {
+  color: #fb2851;
+}
+
+.ferrari-hover {
+  color: white;
+}
+
+.ferrari-hover:hover {
+  color: #e5b106;
+}
+
+.lambo-hover {
+  color: white;
+}
+
+.lambo-hover:hover {
+  color: #8ff983;
+}
+
+.mclaren-hover {
+  color: white;
+}
+
+.mclaren-hover:hover {
+  color: #f4623a;
+}
+
 .vehicle-make {
+  z-index: 1000;
   position: absolute;
   top: 1vw;
   left: 1vw;
+  margin: 0;
   -webkit-animation-name: textMotionMake;
           animation-name: textMotionMake;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.vehicle-toyota {
-  position: absolute;
-  top: 1vw;
-  left: 1vw;
-  -webkit-animation-name: textMotionToyota;
-          animation-name: textMotionToyota;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.vehicle-name {
-  position: absolute;
-  -webkit-animation-name: textMotionName;
-          animation-name: textMotionName;
-  top: 10vw;
-  left: 1vw;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.vehicle-supra {
-  position: absolute;
-  position: absolute;
-  -webkit-animation-name: textMotionSupra;
-          animation-name: textMotionSupra;
-  top: 7vw;
-  left: 1vw;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.vehicle-make:hover {
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  -webkit-transform: translateY(1vw) translateX(7.5vw) !important;
+          transform: translateY(1vw) translateX(7.5vw) !important;
 }
 
 @-webkit-keyframes textMotionMake {
@@ -98,31 +97,207 @@
   }
 }
 
-@-webkit-keyframes textMotionName {
+.vehicle-ferrari {
+  z-index: 1000;
+  position: absolute;
+  top: 10vw;
+  left: 1vw;
+  margin: 0;
+  -webkit-animation-name: textMotionFerrari;
+          animation-name: textMotionFerrari;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vehicle-ferrari:hover {
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  -webkit-transform: translateY(0.5vw) translateX(13vw) !important;
+          transform: translateY(0.5vw) translateX(13vw) !important;
+}
+
+@-webkit-keyframes textMotionFerrari {
   0% {
     -webkit-transform: translateX(-1000vw);
             transform: translateX(-1000vw);
   }
   100% {
-    -webkit-transform: translateX(13vw);
-            transform: translateX(13vw);
+    -webkit-transform: translateX(12vw);
+            transform: translateX(12vw);
     font-size: 5vw;
   }
 }
 
-@keyframes textMotionName {
+@keyframes textMotionFerrari {
   0% {
     -webkit-transform: translateX(-1000vw);
             transform: translateX(-1000vw);
   }
   100% {
-    -webkit-transform: translateX(13vw);
-            transform: translateX(13vw);
+    -webkit-transform: translateX(12vw);
+            transform: translateX(12vw);
     font-size: 5vw;
   }
 }
 
-@-webkit-keyframes textMotionToyota {
+.vehicle-porsche {
+  position: absolute;
+  z-index: 1000;
+  -webkit-animation-name: textMotionPorsche;
+          animation-name: textMotionPorsche;
+  top: 7vw;
+  left: 1vw;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vehicle-porsche:hover {
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  -webkit-transform: translateY(0.4vw) translateX(72vw) !important;
+          transform: translateY(0.4vw) translateX(72vw) !important;
+}
+
+@-webkit-keyframes textMotionPorsche {
+  0% {
+    -webkit-transform: translateX(1000vw);
+            transform: translateX(1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(72.5vw);
+            transform: translateX(72.5vw);
+    font-size: 5vw;
+  }
+}
+
+@keyframes textMotionPorsche {
+  0% {
+    -webkit-transform: translateX(1000vw);
+            transform: translateX(1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(72.5vw);
+            transform: translateX(72.5vw);
+    font-size: 5vw;
+  }
+}
+
+.vehicle-lambo {
+  z-index: 1000;
+  position: absolute;
+  -webkit-animation-name: textMotionLambo;
+          animation-name: textMotionLambo;
+  top: 0;
+  left: 1vw;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vehicle-lambo:hover {
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  -webkit-transform: translateY(0.3vw) translateX(5vw) !important;
+          transform: translateY(0.3vw) translateX(5vw) !important;
+}
+
+@-webkit-keyframes textMotionLambo {
+  0% {
+    -webkit-transform: translateX(-1000vw);
+            transform: translateX(-1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(6vw);
+            transform: translateX(6vw);
+    font-size: 5vw;
+  }
+}
+
+@keyframes textMotionLambo {
+  0% {
+    -webkit-transform: translateX(-1000vw);
+            transform: translateX(-1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(6vw);
+            transform: translateX(6vw);
+    font-size: 5vw;
+  }
+}
+
+.vehicle-lambo2 {
+  z-index: 1000;
+  position: absolute;
+  -webkit-animation-name: textMotionLambo2;
+          animation-name: textMotionLambo2;
+  top: 3vw;
+  left: 1vw;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vehicle-lambo2:hover {
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  -webkit-transform: translateY(0.5vw) translateX(66vw) !important;
+          transform: translateY(0.5vw) translateX(66vw) !important;
+}
+
+@-webkit-keyframes textMotionLambo2 {
+  0% {
+    -webkit-transform: translateX(1000vw);
+            transform: translateX(1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(65vw);
+            transform: translateX(65vw);
+    font-size: 5vw;
+  }
+}
+
+@keyframes textMotionLambo2 {
+  0% {
+    -webkit-transform: translateX(1000vw);
+            transform: translateX(1000vw);
+  }
+  100% {
+    -webkit-transform: translateX(65vw);
+            transform: translateX(65vw);
+    font-size: 5vw;
+  }
+}
+
+.vehicle-mclaren {
+  z-index: 1000;
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+  -webkit-animation-name: textMotionMclaren;
+          animation-name: textMotionMclaren;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes textMotionMclaren {
   0% {
     -webkit-transform: translateX(1000vw);
             transform: translateX(1000vw);
@@ -130,11 +305,11 @@
   100% {
     -webkit-transform: translateX(60vw);
             transform: translateX(60vw);
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 
-@keyframes textMotionToyota {
+@keyframes textMotionMclaren {
   0% {
     -webkit-transform: translateX(1000vw);
             transform: translateX(1000vw);
@@ -142,42 +317,92 @@
   100% {
     -webkit-transform: translateX(60vw);
             transform: translateX(60vw);
-    font-size: 6vw;
-  }
-}
-
-@-webkit-keyframes textMotionSupra {
-  0% {
-    -webkit-transform: translateX(1000vw);
-            transform: translateX(1000vw);
-  }
-  100% {
-    -webkit-transform: translateX(80vw);
-            transform: translateX(80vw);
     font-size: 5vw;
   }
 }
 
-@keyframes textMotionSupra {
+.vehicle-p1 {
+  z-index: 1000;
+  position: absolute;
+  -webkit-animation-name: textMotionMclaren;
+          animation-name: textMotionMclaren;
+  top: 7vw;
+  left: 1vw;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes textMotionMclaren {
   0% {
     -webkit-transform: translateX(1000vw);
             transform: translateX(1000vw);
   }
   100% {
-    -webkit-transform: translateX(80vw);
-            transform: translateX(80vw);
+    -webkit-transform: translateX(78vw);
+            transform: translateX(78vw);
     font-size: 5vw;
   }
 }
 
 .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 50vh;
+  padding: 1rem;
+}
+
+.login__title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.login__welcome {
+  margin-bottom: 1rem;
+}
+
+.login__btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login__button {
+  width: 6rem;
+  margin: 1rem;
+}
+
+@media only screen and (min-width: 993px) {
+  .login {
+    padding: 1rem 10rem;
+  }
 }
 
 .footer {
   color: white;
-  background-color: #3e4551;
+  background-color: #303841;
 }
 
 .footer a {
@@ -200,6 +425,10 @@
 
 .footer .fa:hover {
   color: #6b6b6b;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
 }
 
 .footer__bottom {
@@ -215,11 +444,232 @@
   padding: 0 3rem;
 }
 
+.project {
+  height: 300vh;
+}
+
+.project__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.project__title-wrap {
+  padding: 3rem 1rem 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.project-tile-single {
+  width: 100%;
+  height: 70vw;
+}
+
+.project-tile-single-name {
+  z-index: 1000;
+}
+
+.project-tile-single a {
+  font-weight: bold;
+  text-decoration: none !important;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-tile-single a:hover span {
+  -webkit-animation-name: arrow;
+          animation-name: arrow;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.project-tile-single img {
+  width: 100%;
+  height: 87%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.project-tile-single img:hover {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.project-tile-single-name {
+  color: black;
+  background-color: white;
+  font-size: 1.3rem;
+  width: 100%;
+  height: 13%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-tile-single-name-ani {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  color: #f20304;
+}
+
+.project__showAll {
+  margin: 2rem auto;
+  text-align: center;
+  width: 10rem;
+  background-color: #303841;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.8rem 1rem;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.project__showAll:hover {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  background-color: #be3144;
+  color: white;
+}
+
+.project__showAll:hover span {
+  display: inline-block;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  -webkit-transform: translateX(0.5rem);
+          transform: translateX(0.5rem);
+}
+
+.project__showAlla {
+  text-decoration: none !important;
+}
+
+@media only screen and (min-width: 993px) {
+  .project__title-wrap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .project-tile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .project-tile-single {
+    width: 50%;
+    height: 35vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .project-tile-single {
+    width: 33.33%;
+    height: 25vw;
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(3vw);
+            transform: translateX(3vw);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(3vw);
+            transform: translateX(3vw);
+  }
+}
+
+@-webkit-keyframes zoom {
+  0% {
+  }
+  100% {
+    opacity: 0.8;
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes zoom {
+  0% {
+  }
+  100% {
+    opacity: 0.8;
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
 body {
   margin: 0 1rem;
 }
 
 a {
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: none;
 }
 

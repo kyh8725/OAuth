@@ -1,6 +1,6 @@
 .footer {
   color: white;
-  background-color: #3e4551;
+  background-color: #303841;
 
   a {
     color: white;
@@ -19,6 +19,8 @@
   }
   .fa:hover {
     color: rgb(107, 107, 107);
+    transition: 0.4s ease;
+    transform: translateY(0.5rem);
   }
 
   &__bottom {

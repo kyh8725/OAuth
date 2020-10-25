@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import {Navbar, Nav} from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser } from '@fortawesome/free-regular-svg-icons'
 
 export default function Header() {
     return (
         <>
-        <div className="header">
+        <section className="header">
         <Navbar className="header" collapseOnSelect expand="lg" bg="light" variant="light">
         <Navbar.Brand href="/home">
       <img
@@ -18,28 +20,14 @@ export default function Header() {
     </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-          <Nav.Link href="/home"><strong>HOME</strong> </Nav.Link>
+          <Nav className="mr-auto">       
       <Nav.Link href="/vehicles"><strong>VEHICLES</strong></Nav.Link>
-        <Link to="/protected"> <img
-        alt=""
-        src="/login.png"
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
-      /></Link>   
+      <Nav.Link href="/protected"><FontAwesomeIcon icon={faUser} color="grey" size="lg" /> <strong> My Account   </strong></Nav.Link>   
 
           </Nav>      
         </Navbar.Collapse>
       </Navbar>
-      </div>
+      </section>
       </>
       )
 }
-/**       <Link to="/protected"> <img
-        alt=""
-        src="/shopping-cart.png"
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
-      /></Link>   */
