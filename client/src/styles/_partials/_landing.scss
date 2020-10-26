@@ -50,7 +50,7 @@
   animation-fill-mode: forwards;
   &:hover {
     transition: 0.4s ease-in;
-    transform: translateY(1vw) translateX(7.5vw) !important;
+    transform: translateY(0.3vw) translateX(7.5vw) !important;
   }
 }
 @keyframes textMotionMake {
@@ -59,7 +59,7 @@
   }
   100% {
     transform: translateX(7vw);
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 
@@ -75,7 +75,7 @@
   animation-fill-mode: forwards;
   &:hover {
     transition: 0.4s ease-in;
-    transform: translateY(0.5vw) translateX(13vw) !important;
+    transform: translateY(0.3vw) translateX(12.5vw) !important;
   }
 }
 @keyframes textMotionFerrari {
@@ -93,12 +93,13 @@
   animation-name: textMotionPorsche;
   top: 7vw;
   left: 1vw;
+  margin: 0;
   animation-duration: 4s;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   &:hover {
     transition: 0.4s ease-in;
-    transform: translateY(0.4vw) translateX(72vw) !important;
+    transform: translateY(0.3vw) translateX(72vw) !important;
   }
 }
 @keyframes textMotionPorsche {
@@ -116,12 +117,13 @@
   animation-name: textMotionLambo;
   top: 0;
   left: 1vw;
+  margin: 0;
   animation-duration: 3s;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   &:hover {
     transition: 0.4s ease-in;
-    transform: translateY(0.3vw) translateX(5vw) !important;
+    transform: translateY(0.3vw) translateX(5.5vw) !important;
   }
 }
 @keyframes textMotionLambo {
@@ -139,12 +141,13 @@
   animation-name: textMotionLambo2;
   top: 3vw;
   left: 1vw;
+  margin: 0;
   animation-duration: 4s;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   &:hover {
     transition: 0.4s ease-in;
-    transform: translateY(0.5vw) translateX(66vw) !important;
+    transform: translateY(0.3vw) translateX(65.5vw) !important;
   }
 }
 
@@ -162,6 +165,7 @@
   position: absolute;
   top: 1vw;
   left: 1vw;
+  margin: 0;
   animation-name: textMotionMclaren;
   animation-duration: 3s;
   animation-direction: alternate;
@@ -184,6 +188,7 @@
   animation-name: textMotionMclaren;
   top: 7vw;
   left: 1vw;
+  margin: 0;
   animation-duration: 4s;
   animation-direction: alternate;
   animation-fill-mode: forwards;

@@ -19,7 +19,8 @@ export default function Header() {
     </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">       
+          <Nav className="mr-auto">    
+          <Nav.Link href="/home"><strong>HOME</strong></Nav.Link>   
       <Nav.Link href="/vehicles"><strong>VEHICLES</strong></Nav.Link>
       <Nav.Link href="/protected"><FontAwesomeIcon icon={faUser} color="grey" size="lg" /> <strong> My Account   </strong></Nav.Link>   
 

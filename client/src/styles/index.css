@@ -69,8 +69,8 @@
 .vehicle-make:hover {
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
-  -webkit-transform: translateY(1vw) translateX(7.5vw) !important;
-          transform: translateY(1vw) translateX(7.5vw) !important;
+  -webkit-transform: translateY(0.3vw) translateX(7.5vw) !important;
+          transform: translateY(0.3vw) translateX(7.5vw) !important;
 }
 
 @-webkit-keyframes textMotionMake {
@@ -81,7 +81,7 @@
   100% {
     -webkit-transform: translateX(7vw);
             transform: translateX(7vw);
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 
@@ -93,7 +93,7 @@
   100% {
     -webkit-transform: translateX(7vw);
             transform: translateX(7vw);
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 
@@ -116,8 +116,8 @@
 .vehicle-ferrari:hover {
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
-  -webkit-transform: translateY(0.5vw) translateX(13vw) !important;
-          transform: translateY(0.5vw) translateX(13vw) !important;
+  -webkit-transform: translateY(0.3vw) translateX(12.5vw) !important;
+          transform: translateY(0.3vw) translateX(12.5vw) !important;
 }
 
 @-webkit-keyframes textMotionFerrari {
@@ -151,6 +151,7 @@
           animation-name: textMotionPorsche;
   top: 7vw;
   left: 1vw;
+  margin: 0;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-direction: alternate;
@@ -162,8 +163,8 @@
 .vehicle-porsche:hover {
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
-  -webkit-transform: translateY(0.4vw) translateX(72vw) !important;
-          transform: translateY(0.4vw) translateX(72vw) !important;
+  -webkit-transform: translateY(0.3vw) translateX(72vw) !important;
+          transform: translateY(0.3vw) translateX(72vw) !important;
 }
 
 @-webkit-keyframes textMotionPorsche {
@@ -197,6 +198,7 @@
           animation-name: textMotionLambo;
   top: 0;
   left: 1vw;
+  margin: 0;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-direction: alternate;
@@ -208,8 +210,8 @@
 .vehicle-lambo:hover {
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
-  -webkit-transform: translateY(0.3vw) translateX(5vw) !important;
-          transform: translateY(0.3vw) translateX(5vw) !important;
+  -webkit-transform: translateY(0.3vw) translateX(5.5vw) !important;
+          transform: translateY(0.3vw) translateX(5.5vw) !important;
 }
 
 @-webkit-keyframes textMotionLambo {
@@ -243,6 +245,7 @@
           animation-name: textMotionLambo2;
   top: 3vw;
   left: 1vw;
+  margin: 0;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-direction: alternate;
@@ -254,8 +257,8 @@
 .vehicle-lambo2:hover {
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
-  -webkit-transform: translateY(0.5vw) translateX(66vw) !important;
-          transform: translateY(0.5vw) translateX(66vw) !important;
+  -webkit-transform: translateY(0.3vw) translateX(65.5vw) !important;
+          transform: translateY(0.3vw) translateX(65.5vw) !important;
 }
 
 @-webkit-keyframes textMotionLambo2 {
@@ -287,6 +290,7 @@
   position: absolute;
   top: 1vw;
   left: 1vw;
+  margin: 0;
   -webkit-animation-name: textMotionMclaren;
           animation-name: textMotionMclaren;
   -webkit-animation-duration: 3s;
@@ -328,6 +332,7 @@
           animation-name: textMotionMclaren;
   top: 7vw;
   left: 1vw;
+  margin: 0;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-direction: alternate;
@@ -659,6 +664,7 @@
 
 .gallary {
   width: 80vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,14 +682,10 @@
 }
 
 .gallary img {
+  width: 100%;
   height: 100%;
-  opacity: 80%;
-}
-
-.gallary img:hover {
-  -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
-  opacity: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .gallary-left {
@@ -703,6 +705,11 @@
       -ms-flex: 0.7;
           flex: 0.7;
   margin-bottom: 0.3rem;
+}
+
+.gallary-left-top-image {
+  width: 100%;
+  height: 100%;
 }
 
 .gallary-left-bottom {
@@ -725,10 +732,6 @@
   -webkit-box-flex: 0.4;
       -ms-flex: 0.4;
           flex: 0.4;
-}
-
-.gallary-left-bottom-right-image img {
-  height: 100%;
 }
 
 .gallary-left-bottom-left-image {
@@ -757,7 +760,16 @@
   margin-top: 0.3rem;
 }
 
+.gallary-right-top-right-image {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+}
+
 .gallary-right-top-left-image {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
   margin-right: 0.3rem;
 }
 
@@ -767,16 +779,7 @@
           flex: 0.7;
 }
 
-.gallary-image {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 @media only screen and (min-width: 1440px) {
-  .gallary {
-    width: 100%;
-  }
   .gallary-left, .gallary-right {
     -webkit-box-flex: 0.45;
         -ms-flex: 0.45;
@@ -796,12 +799,36 @@
     margin-top: 0;
     margin-bottom: 0.3rem;
   }
-  .gallary-right-bottom-image {
-    height: 100%;
-  }
-  .gallary-right-bottom-image img {
-    height: 100%;
-  }
+}
+
+.image-box {
+  width: 80vw;
+  max-height: 90%;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  max-height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.react-fancybox,
+.thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail img {
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  opacity: 80%;
+  max-width: 100% !important;
+}
+
+.thumbnail img:hover {
+  opacity: 100%;
 }
 
 body {
