@@ -1,7 +1,6 @@
 import React from 'react'
-import {Redirect} from "react-router-dom";
 
-export default function models() {
+export default function Models() {
     return (
         <section id="projects">
         <div className="project__title-wrap">
@@ -50,10 +49,10 @@ export default function models() {
           <div className="project-tile-single">
             <a href="https://www.toyota.ca/toyota/en/vehicles/supra/overview" target="/blank" rel="noopener noreferrer">
               <img
-                src="https://s3.amazonaws.com/toyota-cms-media/wp-content/uploads/2019/05/2020_GR_Supra_Launch_Edition_Absolute_Zero_015_6E65AE348E1FCAD87040FE9363E4B81C55C37449-1500x900.jpg" alt="supra"
+                src="https://www.mad4wheels.com/img/free-car-images/mobile/17444/nissan-gt-r-r35-nismo-2020-552029.jpg" alt="supra"
               />
   
-              <div className="project-tile-single-name">Toyota Supra
+              <div className="project-tile-single-name">Nissan GTR
                 <span className="project-tile-single-name-ani">&gt;</span>
               </div></a
             >

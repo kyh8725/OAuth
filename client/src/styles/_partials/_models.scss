@@ -69,6 +69,7 @@
   }
   &__showAll {
     margin: 2rem auto;
+    margin-bottom: 0;
     text-align: center;
     width: 10rem;
     background-color: #303841;
@@ -97,12 +98,6 @@
 
 @include tablet {
   .project {
-    &__title {
-      &-wrap {
-        justify-content: flex-start;
-      }
-    }
-
     &-tile {
       display: flex;
       flex-wrap: wrap;

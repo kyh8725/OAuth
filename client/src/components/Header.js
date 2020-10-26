@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 import {Navbar, Nav} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
