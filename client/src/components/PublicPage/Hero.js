@@ -24,7 +24,6 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
             <img className="d-block w-100" src="/porsche.jpg" alt="porsche" />
             <a
               className="porsche-hover"
@@ -32,7 +31,6 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               <div className="vehicle-make">
                 <strong> Porsche</strong>
               </div>
@@ -43,7 +41,6 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               <div className="vehicle-porsche">
                 <strong> 911</strong>
               </div>
@@ -56,7 +53,6 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
             <img className="d-block w-100" src="/ferrari.jpg" alt="ferrari" />
             <a
               className="ferrari-hover"
@@ -64,7 +60,6 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               <p className="vehicle-make">
                 <strong> Ferrari</strong>
               </p>
@@ -73,7 +68,6 @@ export default function Hero() {
               className="ferrari-hover"
               href="https://www.ferrari.com/en-CA/auto/458-italia"
             >
-              {" "}
               <p className="vehicle-ferrari">
                 <strong> 458 Italia</strong>
               </p>
@@ -86,7 +80,6 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
             <img
               className="d-block w-100"
               src="/lamborghini.jpg"
@@ -98,7 +91,6 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               <p className="vehicle-lambo">
                 <strong> Lamborghini</strong>
               </p>
@@ -107,7 +99,6 @@ export default function Hero() {
               className="lambo-hover"
               href="https://www.lamborghini.com/en-en/models/aventador"
             >
-              {" "}
               <p className="vehicle-lambo2">
                 <strong>Aventador </strong>
               </p>
@@ -120,7 +111,6 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
             <img className="d-block w-100" src="/mclaren.jpg" alt="mclaren" />
             <a
               className="mclaren-hover"
@@ -128,13 +118,11 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               <p className="vehicle-mclaren">
                 <strong> Mclaren</strong>
               </p>
             </a>
             <a className="mclaren-hover" href="https://www.mclaren.com/">
-              {" "}
               <p className="vehicle-p1">
                 <strong> P1</strong>
               </p>

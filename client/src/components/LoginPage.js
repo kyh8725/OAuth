@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { API_URL } from "../App";
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 class Login extends Component {
   login = () => {
@@ -23,13 +23,26 @@ class Login extends Component {
   render() {
     return (
       <div className="login">
-      <div className="login__title">LOGIN</div>
-      <div className="login__welcome"> Welcome to dreamGarage, you can virtually <br></br>
-      <br></br> You can log in with Github or Google+ id.      
-      </div>
+        <div className="login__title">LOGIN</div>
+        <div className="login__welcome">
+          <p>Welcome to dreamGarage </p>
+          <p>You can log in with Github or Google+ id. </p>
+        </div>
         <div className="login__btn-wrap">
-        <Button variant="secondary" className='login__button' onClick={this.login}>Github</Button>
-        <Button variant="danger" className='login__button' onClick={this.loginGoogle}>Google+</Button> 
+          <Button
+            variant="secondary"
+            className="login__button"
+            onClick={this.login}
+          >
+            Github
+          </Button>
+          <Button
+            variant="danger"
+            className="login__button"
+            onClick={this.loginGoogle}
+          >
+            Google+
+          </Button>
         </div>
       </div>
     );

@@ -14,12 +14,19 @@ const logger = require("morgan");
 
 // create express app and also allow for app PORT to be optionally specified by a variable
 const app = express();
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
+
+app.use(express.urlencoded({ extended: false }));
 const PORT = process.env.PORT || 5000;
+
+const carRoute = require("./routes/api/cars");
+app.use("/mycars", carRoute);
 
 // instantiate Passport and Github + Google Strategy
 const passport = require("passport");
 const GitHubStrategy = require("passport-github").Strategy;
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const GoogleStrategy = require("passport-google-oauth20").Strategy;
 
 //import router paths
 const routes = require("./routes");
@@ -104,6 +111,18 @@ passport.deserializeUser((user, cb) => {
 
 // paths, url endpoint routing
 app.use("/", routes);
+
+// MongoDB
+
+const mongoose = require("mongoose");
+const MONGODB = process.env.DB_CONNECTION;
+mongoose.connect(
+  MONGODB,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  () => {
+    console.log("connected to DB!");
+  }
+);
 
 app.listen(PORT, () => {
   console.log(`Sever listening on port ${PORT}.`);

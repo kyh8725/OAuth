@@ -94,6 +94,7 @@
 .image-box {
   width: 80vw;
   max-height: 90%;
+  background-color: rgba(189, 189, 189, 0.3) !important;
   img {
     z-index: 100;
     width: 100%;
@@ -113,6 +114,7 @@
   transition: opacity 0.4s ease;
   opacity: 80%;
   &:hover {
+    cursor: pointer;
     opacity: 100%;
   }
   max-width: 100% !important;

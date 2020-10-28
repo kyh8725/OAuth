@@ -5,9 +5,13 @@ export default (props) => {
   console.log(props);
   return (
     <>
-    <AuthButton />
-      <div>My Cart</div>      
-      <h1>{props.user.username || props.user.displayName}</h1>
+      <section className="garage">
+        <AuthButton />
+        <p>
+          <strong>This page is under construction </strong>
+        </p>
+        <h1>{props.user.username || props.user.displayName}</h1>
+      </section>
     </>
   );
 };
