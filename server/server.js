@@ -1,27 +1,17 @@
 const express = require("express");
-
-// session id on server session cooke on client
+// session id on server session cookie on client
 const session = require("express-session");
-
 // cors package prevents CORS errors when using client side API calls
 const cors = require("cors");
-
 // add http headers, small layer of security
 const helmet = require("helmet");
-
 // log http requests
 const logger = require("morgan");
-
-// create express app and also allow for app PORT to be optionally specified by a variable
 const app = express();
-const bodyParser = require("body-parser");
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.use(express.urlencoded({ extended: false }));
 const PORT = process.env.PORT || 5000;
-
-const carRoute = require("./routes/api/cars");
-app.use("/mycars", carRoute);
 
 // instantiate Passport and Github + Google Strategy
 const passport = require("passport");
@@ -47,7 +37,6 @@ const passportGoogleConfig = {
 };
 
 app.use(express.json());
-
 // initialize HTTP Headers middleware
 app.use(helmet());
 
@@ -112,17 +101,22 @@ passport.deserializeUser((user, cb) => {
 // paths, url endpoint routing
 app.use("/", routes);
 
-// MongoDB
+const vehicleRoute = require("./routes/api/vehicleRoute");
+app.use("/vehicles", vehicleRoute);
+const blogRoute = require("./routes/api/blogRoute");
+app.use("/blogs", blogRoute);
 
+// MongoDB
 const mongoose = require("mongoose");
-const MONGODB = process.env.DB_CONNECTION;
-mongoose.connect(
-  MONGODB,
-  { useNewUrlParser: true, useUnifiedTopology: true },
-  () => {
-    console.log("connected to DB!");
-  }
-);
+const MONGO_URL = process.env.MONGODB_URL;
+mongoose.connect(MONGO_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+mongoose.connection.on("connected", () => {
+  console.log("Connected to DB");
+});
 
 app.listen(PORT, () => {
   console.log(`Sever listening on port ${PORT}.`);

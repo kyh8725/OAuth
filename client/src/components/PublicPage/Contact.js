@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 export default function Contact() {
   return (
@@ -11,13 +11,13 @@ export default function Contact() {
         </h5>
         <p className="contact__description2">
           This project was first started with intention in practicing
-          <strong> OAuth and MongoDB </strong>. It was expanded to a sports car
-          dealership-like web site because I like sports cars. Due to short
-          man-power, most of the links are external car dealership's websites.
-          self-built pages include /home, /vehicles, /contact, and /FAQ. Tech
-          used:{" "}
+          <strong> OAuth and MongoDB </strong>. It was expanded to an auto
+          dealership-like web site because I like cars. Due to short man-power,
+          most of the links are external. self-built pages include /home,
+          /vehicles, /contact, and /FAQ. Tech used:{" "}
           <strong>
-            HTML, Sass, Bootstrap, JavaScript, React, OAuth, MongoDB
+            HTML, Sass, Bootstrap, JavaScript, React, Express, Node, OAuth,
+            MongoDB
           </strong>
         </p>
 
