@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "homepage":"https://dancars.herokuapp.com/",
   "description": "",
   "main": "server.js",
   "scripts": {
