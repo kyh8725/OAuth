@@ -24,7 +24,7 @@
     "react-scripts": "3.4.1",
     "serve": "^11.3.2"
   },
-  "scripts": {
+  "scripts": {  
     "client": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
