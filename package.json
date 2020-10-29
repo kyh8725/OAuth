@@ -8,7 +8,7 @@
     "start": "npm start --prefix server",
     "server": "nodemon index --prefix server",
     "build": "react-scripts build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm install --prefix server && npm run start --prefix client && npm run client --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm install --prefix server && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
