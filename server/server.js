@@ -10,6 +10,8 @@ const logger = require("morgan");
 const app = express();
 app.use(express.json());
 
+const path = require("path");
+
 app.use(express.urlencoded({ extended: false }));
 const PORT = process.env.PORT || 5000;
 
@@ -118,7 +120,7 @@ if (process.env.NODE_ENV === "production") {
   // Set static folder
   app.use(express.static("../client/build"));
   app.get("*", (req, res) => {
-    res.sendFile("../client/build", "index.html");
+    res.sendFile(path.join(__dirname, "../client", "build", "index.html"));
   });
 }
 
