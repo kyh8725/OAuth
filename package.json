@@ -1,0 +1,20 @@
+{
+  "name": "sports-cars",
+  "version": "1.0.0",
+  "description": "Built to practice front-end skills as well as OAuth, and MongoDB.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",    
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm install --prefix server && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyh8725/OAuth.git"
+  },
+  "author": "Daniel Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyh8725/OAuth/issues"
+  },
+  "homepage": "https://github.com/kyh8725/OAuth#readme"
+}
