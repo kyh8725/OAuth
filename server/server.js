@@ -12,7 +12,7 @@ app.use(express.json());
 const path = require("path");
 
 app.use(express.urlencoded({ extended: false }));
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // instantiate Passport and Github + Google Strategy
 const passport = require("passport");
@@ -37,7 +37,6 @@ const passportGoogleConfig = {
   callbackURL: process.env.GOOGLE_CALLBACK_URL,
 };
 
-app.use(express.json());
 // initialize HTTP Headers middleware
 app.use(helmet());
 
@@ -110,6 +109,7 @@ app.use("/blogs", blogRoute);
 if (process.env.NODE_ENV === "production") {
   // Set static folder
   app.use(express.static("../client/build"));
+
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../client", "build", "index.html"));
   });
