@@ -6,10 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build":"cd client && npm run build",
-    "server": "nodemon server.js",    
-    "client": "npm run client --prefix ../client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "build":"npm run build --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client -- prefix client\""
   },
   "keywords": [],
   "author": "",
