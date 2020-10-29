@@ -8,7 +8,6 @@ import ProtectedPage from "./components/ProtectedPage";
 import Contact from "./components/PublicPage/Contact";
 import Footer from "./components/Footer";
 import Vehicles from "./components/PublicPage/Vehicles";
-import "./styles/index.css";
 
 // Authentication server URL
 export const API_URL = "https://dancars.herokuapp.com";
