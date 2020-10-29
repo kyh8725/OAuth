@@ -9,11 +9,10 @@ const helmet = require("helmet");
 const logger = require("morgan");
 const app = express();
 app.use(express.json());
-
 const path = require("path");
 
 app.use(express.urlencoded({ extended: false }));
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 // instantiate Passport and Github + Google Strategy
 const passport = require("passport");
@@ -108,14 +107,6 @@ app.use("/vehicles", vehicleRoute);
 const blogRoute = require("./routes/api/blogRoute");
 app.use("/blogs", blogRoute);
 
-// MongoDB
-const mongoose = require("mongoose");
-const MONGO_URL = process.env.MONGODB_URL;
-mongoose.connect(MONGO_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
 if (process.env.NODE_ENV === "production") {
   // Set static folder
   app.use(express.static("../client/build"));
@@ -123,6 +114,13 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "../client", "build", "index.html"));
   });
 }
+// MongoDB
+const mongoose = require("mongoose");
+const MONGO_URL = process.env.MONGODB_URL;
+mongoose.connect(MONGO_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 mongoose.connection.on("connected", () => {
   console.log("Connected to DB");
