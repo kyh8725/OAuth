@@ -1,6 +1,7 @@
 {
   "name": "sports-cars",
   "version": "1.0.0",
+  "homepage":"https://dancars.herokuapp.com/",
   "description": "Built to practice front-end skills as well as OAuth, and MongoDB.",
   "main": "server.js",
   "scripts": {
@@ -16,6 +17,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kyh8725/OAuth/issues"
-  },
-  "homepage": "https://dancars.herokuapp.com"
+  }
 }

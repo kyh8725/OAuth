@@ -11,7 +11,7 @@ import Vehicles from "./components/PublicPage/Vehicles";
 import "./styles/index.css";
 
 // Authentication server URL
-export const API_URL = "http://localhost:5000";
+export const API_URL = "https://dancars.herokuapp.com";
 
 export default class App extends Component {
   render() {
