@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "homepage": "https://dancartest.herokuapp.com/",
+  "homepage": "https://dansportscar.herokuapp.com/",
   "description": "",
   "main": "server.js",
   "scripts": {

@@ -1,6 +1,6 @@
 {
-  "proxy": "https://dancartest.herokuapp.com/",
-  "homepage": "https://dancartest.herokuapp.com/",
+  "proxy": "https://dansportscar.herokuapp.com/",
+  "homepage": "https://dansportscar.herokuapp.com/",
   "name": "oauthpractice",
   "version": "0.1.0",
   "private": true,
