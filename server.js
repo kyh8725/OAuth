@@ -106,14 +106,6 @@ app.use("/vehicles", vehicleRoute);
 const blogRoute = require("./routes/api/blogRoute");
 app.use("/blogs", blogRoute);
 
-if (process.env.NODE_ENV === "production") {
-  // Set static folder
-  app.use(express.static("../client/build"));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../client", "build", "index.html"));
-  });
-}
 // MongoDB
 const mongoose = require("mongoose");
 const MONGO_URL = process.env.MONGODB_URL;
@@ -125,6 +117,15 @@ mongoose.connect(MONGO_URL, {
 mongoose.connection.on("connected", () => {
   console.log("Connected to DB");
 });
+
+if (process.env.NODE_ENV === "production") {
+  // Set static folder
+  app.use(express.static("client/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 app.listen(PORT, () => {
   console.log(`Sever listening on port ${PORT}.`);

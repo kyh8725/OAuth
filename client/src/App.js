@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import Vehicles from "./components/PublicPage/Vehicles";
 
 // Authentication server URL
-export const API_URL = "https://dancars.herokuapp.com";
+export const API_URL = process.env.REACT_APP_API_URL;
 
 export default class App extends Component {
   render() {

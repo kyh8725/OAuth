@@ -11,52 +11,92 @@ export default function () {
               <a href="/vehicles">All Vehicles</a>
             </li>
             <li>
-              <a href="https://www.porsche.com/canada/en/" target="_blank">
+              <a
+                href="https://www.porsche.com/canada/en/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Porsche
               </a>
             </li>
             <li>
-              <a href="https://www.ferrari.com/en-EN" target="_blank">
+              <a
+                href="https://www.ferrari.com/en-EN"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Ferrari
               </a>
             </li>
             <li>
-              <a href="https://www.lamborghini.com/en-en" target="_blank">
+              <a
+                href="https://www.lamborghini.com/en-en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Lamborghini
               </a>
             </li>
             <li>
-              <a href="https://www.mclaren.com/" target="_blank">
+              <a
+                href="https://www.mclaren.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Mclaren
               </a>
             </li>
             <li>
-              <a href="https://www.mercedes-benz.ca/en/home" target="_blank">
+              <a
+                href="https://www.mercedes-benz.ca/en/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Mercedes-Benz
               </a>
             </li>
             <li>
-              <a href="https://www.bmw.ca/en/home.html" target="_blank">
+              <a
+                href="https://www.bmw.ca/en/home.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 BMW
               </a>
             </li>
             <li>
-              <a href="https://www.audi.ca/ca/web/en.html" target="_blank">
+              <a
+                href="https://www.audi.ca/ca/web/en.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Audi
               </a>
             </li>
             <li>
-              <a href="https://www.acura.ca/" target="_blank">
+              <a
+                href="https://www.acura.ca/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Acura
               </a>
             </li>
             <li>
-              <a href="https://www.nissan.ca/" target="_blank">
+              <a
+                href="https://www.nissan.ca/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Nissan
               </a>
             </li>
             <li>
-              <a href="https://www.toyota.ca/toyota/en/" target="_blank">
+              <a
+                href="https://www.toyota.ca/toyota/en/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Toyota
               </a>
             </li>
@@ -69,7 +109,11 @@ export default function () {
               <a href="">Special Offers</a>
             </li>
             <li>
-              <a href="https://www.autotrader.ca/?prv=British+Columbia&r=9&rprv=True&loc=British+Columbia">
+              <a
+                href="https://www.autotrader.ca/?prv=British+Columbia&r=9&rprv=True&loc=British+Columbia"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Certified Pre-Owned
               </a>
             </li>
