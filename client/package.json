@@ -25,9 +25,9 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "start": "npm run server && npm run client",    
+    "server": "serve -s build",
     "client": "react-scripts start",
-    "start": "concurrently \"npm run serve\" \"npm run client\"",
-    "serve": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
