@@ -22,10 +22,11 @@
     "react-fancybox": "^0.2.5",
     "react-magnific-popup": "^1.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "npm run server && npm run client",    
+    "start": "npm run server && npm run client",
     "server": "serve -s build",
     "client": "react-scripts start",
     "build": "react-scripts build",
