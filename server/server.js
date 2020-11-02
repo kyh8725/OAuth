@@ -103,9 +103,6 @@ passport.deserializeUser((user, cb) => {
 const emailRoute = require("./routes/api/emailRoute");
 app.use("/email", emailRoute);
 
-//Static folder
-app.use("../client/public", express.static(path.join(__dirname, "public")));
-
 //body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
