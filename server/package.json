@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"npm start --prefix ../client\" \"node server.js\"",
+    "start": "npm start --prefix ../client && node server.js",
     "server": "nodemon server.js",
-    "client": "npm run client --prefix ../client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
