@@ -39,6 +39,7 @@ export default function Discover() {
             <a
               href="https://www.autotrader.ca/?prv=British+Columbia&r=9&rprv=True&loc=British+Columbia"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Button variant="outline-secondary">Find Yours</Button>
             </a>

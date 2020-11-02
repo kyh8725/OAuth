@@ -8,9 +8,7 @@ import ProtectedPage from "./components/ProtectedPage";
 import Contact from "./components/PublicPage/Contact";
 import Footer from "./components/Footer";
 import Vehicles from "./components/PublicPage/Vehicles";
-
-// Authentication server URL
-export const API_URL = process.env.REACT_APP_API_URL;
+import "./styles/index.css";
 
 export default class App extends Component {
   render() {

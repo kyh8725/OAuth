@@ -1,7 +1,6 @@
 {
-  "proxy": "https://dansportscar.herokuapp.com/",
-  "homepage": "https://dansportscar.herokuapp.com/",
-  "name": "oauthpractice",
+  "proxy":"http://localhost:5000",
+  "name": "sportscarapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,8 +23,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
-  "scripts": {  
-    "client":"react-scripts start",
+  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -106,7 +106,7 @@ export default function () {
           <h5 className="footer__top-second-title"> Shopping Tools</h5>
           <ul>
             <li>
-              <a href="">Special Offers</a>
+              <a href="/vehicles">Special Offers</a>
             </li>
             <li>
               <a
@@ -118,7 +118,7 @@ export default function () {
               </a>
             </li>
             <li>
-              <a href="">Financing Options</a>
+              <a href="/contact">Financing Options</a>
             </li>
           </ul>
         </div>
@@ -129,13 +129,13 @@ export default function () {
               <a href="/contact">Contact Us</a>
             </li>
             <li>
-              <a href="">Visit Us</a>
+              <a href="/contact">Visit Us</a>
             </li>
             <li>
-              <a href="">Career</a>
+              <a href="/contact">Career</a>
             </li>
             <li>
-              <a href="">FAQ</a>
+              <a href="/contact">FAQ</a>
             </li>
           </ul>
         </div>
