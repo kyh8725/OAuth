@@ -27,7 +27,6 @@
   },
   "scripts": {
     "start": "serve -s build",
-    "server": "serve -s build",
     "client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
